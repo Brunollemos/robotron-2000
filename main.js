@@ -1,4 +1,17 @@
-const robotron = document.querySelector("#robotron");
+const subtrair = document.querySelector("#subtrair");
+const somar = document.querySelector("#somar");
+const braco = document.querySelector("#braco");
+
+somar.addEventListener("click", (evento) => {
+    //console.log(parseInt(braco.value));
+    braco.value = parseInt(braco.value) + 1;
+});
+
+subtrair.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) - 1;
+});
+
+/* const robotron = document.querySelector("#robotron");
 
 // função comum nomeada
 function dizOi() {
@@ -22,3 +35,5 @@ robotron.addEventListener("click", function () {
 robotron.addEventListener("click", () => {
     console.log("Cliquei no robô");
 });
+
+*/
